@@ -1,0 +1,263 @@
+Script started on 2021-04-30 01:31:43+04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;armleo@armleo-virtualbox:~/repl_seq_mem_bug[?2004h[01;32m[armleo@armleo-virtualbox[01;37m repl_seq_mem_bug[01;32m]$[00m sbt../code[4Psbt
+[?2004l[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.4.9 (Oracle Corporation Java 1.8.0_282)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mloading settings for project repl_seq_mem_bug-build from plugins.sbt ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/armleo/repl_seq_mem_bug/project[0m[0J
+[0J[0J[0J[0J[0J[0J[1000D
+[2K[2K  | => repl_seq_mem_bug-build / dependencyPositions 0s
+[2K[2A[1000D[1000D
+[2K[2K  | => repl_seq_mem_bug-build / dependencyPositions 0s
+[2K[2A[1000D[1000D
+[2K[2K  | => repl_seq_mem_bug-build / dependencyPositions 0s
+[2K[2A[1000D[1000D
+[2K[2K  | => repl_seq_mem_bug-build / update 0s
+[2K[2A[1000D[0J[1000D
+[2K[2K  | => repl_seq_mem_bug-build / Compile / compileIncremental 0s
+[2K[2A[1000D[0J[0J[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to repl_seq_mem_bug (in build file:/home/armleo/repl_seq_mem_bug/)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0msbt server started at local:///home/armleo/.sbt/1.0/server/daf7a6f05bb7688321f0/sock[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mstarted sbt server[0m[0J
+[0J[0J[2K[1000D[0J[2K[1000D[0J[0J[2K[1000D[0J[2K[1000D[0J[?1h=[?2004hsbt:repl_seq_mem_bug[36m> [0mexitrunMain test_pkg.sram_1rw_Driver[K
+[?1l>[?1000l[?2004l[0J[0J[0J[0J[0J[0J[0J[0J[1000D
+[2K[2K  | => root / dependencyPositions 0s
+[2K[2A[1000D[0J[1000D
+[2K[2K  | => root / Compile / previousCompile 0s
+[2K[2A[1000D[1000D
+[2K[2K  | => root / Compile / compileIncremental 0s
+[2K[2A[1000D[1000D
+[2K[2K  | => root / Compile / bgRunMain 0s
+[2K[2A[1000D[0J[0m[[0m[0minfo[0m] [0m[0mrunning test_pkg.sram_1rw_Driver [0m[0J
+[0JElaborating design...[0J
+[0JDone elaborating.[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(run-main-0) firrtl.FirrtlInternalException: Internal Error! Please file an issue at https://github.com/ucb-bar/firrtl/issues[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0mfirrtl.FirrtlInternalException: Internal Error! Please file an issue at https://github.com/ucb-bar/firrtl/issues[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Utils$.error(Utils.scala:491)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Utils$.throwInternalError(Utils.scala:164)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.CatchExceptions.transform(CatchExceptions.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.CatchExceptions.transform(CatchExceptions.scala:17)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.$anonfun$transform$3(DependencyManager.scala:278)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform(DependencyManager.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform$(DependencyManager.scala:255)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.PhaseManager.transform(DependencyManager.scala:436)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.FirrtlStage.run(FirrtlStage.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$5(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$3(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.$anonfun$makeScope$2(Logger.scala:166)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.makeScope(Logger.scala:164)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.transform(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.$anonfun$transform$2(MaybeFirrtlStage.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Option.getOrElse(Option.scala:189)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.transform(MaybeFirrtlStage.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.transform(MaybeFirrtlStage.scala:13)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.$anonfun$transform$3(DependencyManager.scala:278)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform(DependencyManager.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform$(DependencyManager.scala:255)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.PhaseManager.transform(DependencyManager.scala:436)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.ChiselStage.run(ChiselStage.scala:45)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$5(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$3(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.$anonfun$makeScope$2(Logger.scala:166)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.makeScope(Logger.scala:164)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.transform(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.execute(Stage.scala:58)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$.delayedEndpoint$test_pkg$sram_1rw_Driver$1(replseqmemtestmodule.scala:37)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$delayedInit$body.apply(replseqmemtestmodule.scala:36)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp$(Function0.scala:39)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.$anonfun$main$1$adapted(App.scala:80)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:431)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.main(App.scala:80)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.main$(App.scala:78)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$.main(replseqmemtestmodule.scala:36)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver.main(replseqmemtestmodule.scala)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Method.java:498)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0mCaused by: java.io.FileNotFoundException: generated_vlog/sram_1rw_mems (No such file or directory)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.io.FileOutputStream.open0(Native Method)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.io.FileOutputStream.open(FileOutputStream.java:270)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.io.PrintWriter.<init>(PrintWriter.java:184)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ConfWriter.serialize(ReplaceMemTransform.scala:65)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ReplaceMemMacros.execute(ReplaceMemMacros.scala:268)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.$anonfun$runTransform$4(Compiler.scala:388)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Utils$.time(Utils.scala:170)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform$.runTransform(Compiler.scala:217)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.runTransform(Compiler.scala:388)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.runTransform$(Compiler.scala:387)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ReplaceMemMacros.runTransform(ReplaceMemMacros.scala:27)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ReplSeqMem.$anonfun$execute$1(ReplaceMemTransform.scala:158)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ReplSeqMem.execute(ReplaceMemTransform.scala:158)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform$(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.passes.memlib.ReplSeqMem.transform(ReplaceMemTransform.scala:114)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.ExpandPrepares.execute(ExpandPrepares.scala:19)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform$(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.ExpandPrepares.transform(ExpandPrepares.scala:7)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.CatchCustomTransformExceptions.execute(CatchCustomTransformExceptions.scala:10)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform.transform$(Compiler.scala:319)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.CatchCustomTransformExceptions.transform(CatchCustomTransformExceptions.scala:7)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.UpdateAnnotations.$anonfun$internalTransform$1(UpdateAnnotations.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Utils$.time(Utils.scala:170)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Transform$.runTransform(Compiler.scala:217)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.UpdateAnnotations.internalTransform(UpdateAnnotations.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.UpdateAnnotations.internalTransform(UpdateAnnotations.scala:8)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.transforms.UpdateAnnotations.transform(UpdateAnnotations.scala:8)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.$anonfun$transform$3(DependencyManager.scala:278)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform(DependencyManager.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform$(DependencyManager.scala:255)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.TransformManager.transform(TransformManager.scala:14)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.$anonfun$internalTransform$6(Compiler.scala:120)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.Utils$.time(Utils.scala:170)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.f$1(Compiler.scala:120)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.$anonfun$internalTransform$8(Compiler.scala:125)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.internalTransform(Compiler.scala:125)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.internalTransform(Compiler.scala:45)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.Compiler.transform(Compiler.scala:45)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.CatchExceptions.transform(CatchExceptions.scala:30)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.phases.CatchExceptions.transform(CatchExceptions.scala:17)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.$anonfun$transform$3(DependencyManager.scala:278)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform(DependencyManager.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform$(DependencyManager.scala:255)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.PhaseManager.transform(DependencyManager.scala:436)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.stage.FirrtlStage.run(FirrtlStage.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$5(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$3(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.$anonfun$makeScope$2(Logger.scala:166)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.makeScope(Logger.scala:164)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.transform(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.$anonfun$transform$2(MaybeFirrtlStage.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Option.getOrElse(Option.scala:189)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.transform(MaybeFirrtlStage.scala:22)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.MaybeFirrtlStage.transform(MaybeFirrtlStage.scala:13)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.$anonfun$transform$3(DependencyManager.scala:278)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform(DependencyManager.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.DependencyManager.transform$(DependencyManager.scala:255)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.PhaseManager.transform(DependencyManager.scala:436)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.ChiselStage.run(ChiselStage.scala:45)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage$$anon$1.transform(Stage.scala:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:38)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.internalTransform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Translator.transform$(Phase.scala:248)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.phases.DeletedWrapper.transform(DeletedWrapper.scala:15)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$5(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foldLeft(List.scala:91)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.$anonfun$transform$3(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.$anonfun$makeScope$2(Logger.scala:166)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.makeScope(Logger.scala:164)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.transform(Stage.scala:47)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at firrtl.options.Stage.execute(Stage.scala:58)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$.delayedEndpoint$test_pkg$sram_1rw_Driver$1(replseqmemtestmodule.scala:37)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$delayedInit$body.apply(replseqmemtestmodule.scala:36)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp$(Function0.scala:39)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.$anonfun$main$1$adapted(App.scala:80)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:431)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.main(App.scala:80)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.App.main$(App.scala:78)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver$.main(replseqmemtestmodule.scala:36)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at test_pkg.sram_1rw_Driver.main(replseqmemtestmodule.scala)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Method.java:498)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0mstack trace is suppressed; run [35mlast Compile / bgRunMain[0m for the full output[0m[0J
+[0J[0J[0J[0m[[0m[31merror[0m] [0m[0mNonzero exit code: 1[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrunMain[0m) Nonzero exit code: 1[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0mTotal time: 8 s, completed Apr 30, 2021 1:32:10 AM[0m[0J
+[0J[0J[2K[1000D[0J[2K[1000D[0J[0J[2K[1000D[0J[2K[1000D[0J[?1h=[?2004hsbt:repl_seq_mem_bug[36m> [0mexit
+[?1l>[?1000l[?2004l[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m[0J
+[0J[0J]0;armleo@armleo-virtualbox:~/repl_seq_mem_bug[?2004h[01;32m[armleo@armleo-virtualbox[01;37m repl_seq_mem_bug[01;32
